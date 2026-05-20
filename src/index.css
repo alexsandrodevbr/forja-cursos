@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+body{
+  background: #050505;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* PARTÍCULAS */
+
+.particle{
+  position: absolute;
+  border-radius: 9999px;
+  background: #84cc16;
+  opacity: 0.15;
+  animation: float 8s infinite ease-in-out;
+}
+
+.particle:nth-child(1){
+  width: 120px;
+  height: 120px;
+  top: 10%;
+  left: 5%;
+}
+
+.particle:nth-child(2){
+  width: 80px;
+  height: 80px;
+  top: 60%;
+  left: 80%;
+  animation-delay: 2s;
+}
+
+.particle:nth-child(3){
+  width: 150px;
+  height: 150px;
+  top: 40%;
+  left: 50%;
+  animation-delay: 4s;
+}
+
+@keyframes float{
+
+  0%{
+    transform: translateY(0px);
+  }
+
+  50%{
+    transform: translateY(-30px);
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
+
+}
+@keyframes wolfZoom {
+
+  0% {
+
+    transform: scale(1);
+
+  }
+
+  50% {
+
+    transform: scale(1.08);
+
+  }
+
+  100% {
+
+    transform: scale(1);
+
+  }
+
+}
+
+.wolf-logo {
+
+  animation: wolfZoom 2.5s infinite ease-in-out;
+
+}
+html {
+
+  scroll-behavior: smooth;
+
+}
