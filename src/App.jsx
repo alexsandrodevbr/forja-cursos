@@ -37,7 +37,7 @@ export default function App() {
       prev === prints.length - 1 ? 0 : prev + 1
     )
 
-  }, 1000)
+  }, 4000)
 
   return () => clearInterval(intervalo)
 
@@ -48,15 +48,10 @@ export default function App() {
 
       {/* FUNDO GLOW */}
 
-      <div className="absolute top-[-200px] left-[-200px] w-[500px] h-[500px] bg-lime-400 opacity-20 blur-[150px] rounded-full"></div>
+    <div className="absolute top-[-150px] left-[-150px] w-[300px] h-[300px] bg-lime-400 opacity-10 blur-[70px] rounded-full"></div>
 
-      <div className="absolute bottom-[-200px] right-[-200px] w-[500px] h-[500px] bg-green-500 opacity-10 blur-[150px] rounded-full"></div>
+<div className="absolute bottom-[-150px] right-[-150px] w-[300px] h-[300px] bg-green-500 opacity-10 blur-[70px] rounded-full"></div>
 
-      {/* PARTÍCULAS */}
-
-      <div className="particle blur-[80px]"></div>
-      <div className="particle blur-[60px]"></div>
-      <div className="particle blur-[100px]"></div>
 
       {/* HEADER */}
 
@@ -114,14 +109,14 @@ export default function App() {
       
 <div className="mt-20 w-full flex justify-center px-4">
 
-  <div className="relative w-full max-w-3xl rounded-[32px] overflow-hidden border border-lime-400 bg-zinc-900 shadow-[0_0_60px_rgba(132,204,22,0.15)]">
+ <div className="relative w-full max-w-3xl rounded-[24px] overflow-hidden border border-lime-400 bg-zinc-900 shadow-[0_0_30px_rgba(132,204,22,0.12)]">
 
-    <video
-      src={apresentacaoVideo}
-      controls
-      preload="metadata"
-      className="w-full aspect-video object-cover"
-    />
+<video
+  src={apresentacaoVideo}
+  controls
+  preload="none"
+  className="w-full rounded-[20px]"
+/>
 
   </div>
 
@@ -141,7 +136,7 @@ export default function App() {
 
           {/* CARD */}
 
-          <div className="bg-zinc-900 rounded-3xl overflow-hidden borderborder-b border-zinc-800 backdrop-blur-md bg-black/60 sticky top-0 z-50 hover:border-lime-400 hover:scale-[1.03] hover:-translate-y-2 transition duration-300 shadow-[0_0_20px_rgba(132,204,22,0.2)]">
+          <div className="bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 backdrop-blur-md bg-black/60 sticky top-0 z-50 hover:border-lime-400 hover:scale-[1.03] hover:-translate-y-2 transition duration-300 shadow-[0_0_20px_rgba(132,204,22,0.2)]">
 
             <img
               src="https://images.unsplash.com/photo-1460925895917-afdab827c52f"
@@ -536,7 +531,7 @@ export default function App() {
             <a
               href="https://pay.kiwify.com.br/4QzXScZ"
               target="_blank"
-              className="mt-16 inline-flex items-center justify-center bg-lime-400 text-black font-extrabold text-xl md:text-2xl px-16 py-6 rounded-3xl hover:scale-110 hover:shadow-[0_0_80px_#84cc16] transition-all duration-300 shadow-[0_0_50px_#84cc16] animate-pulse"
+              className="mt-16 inline-flex items-center justify-center bg-lime-400 text-black font-extrabold text-xl md:text-2xl px-16 py-6 rounded-3xl hover:scale-105 transition-all duration-300 shadow-[0_0_35px_#84cc16]"
             >
 
               Quero entrar agora
@@ -592,7 +587,7 @@ export default function App() {
                         : printAtual - 1
                     )
                   }
-                 className="absolute left-[-35px] md:left-[10px]z-20 bg-lime-400 text-black w-12 h-12 rounded-full font-bold text-2xl hover:scale-110 hover:shadow-[0_0_30px_#84cc16] transition-all duration-300"
+               className="absolute left-[-35px] md:left-[10px] z-20 bg-lime-400 text-black w-10 h-10 md:w-12 md:h-12 rounded-full font-bold text-2xl hover:scale-110 transition-all duration-300"
                 >
 
                   ←
@@ -606,7 +601,7 @@ export default function App() {
                   <img
                     src={prints[printAtual]}
                     alt="Print"
-                 className="w-[260px] md:w-[300px] lg:w-[320px] rounded-[32px] border border-lime-400 shadow-[0_0_60px_rgba(132,204,22,0.18)] hover:scale-[1.02] transition-all duration-500"
+                 className="w-[250px] md:w-[290px] lg:w-[310px] rounded-[28px] border border-lime-400 shadow-[0_0_30px_rgba(132,204,22,0.12)] transition-all duration-500"
                   />
 
                 </div>
@@ -621,9 +616,7 @@ export default function App() {
                         : printAtual + 1
                     )
                   }
-                className="absolute right-[-35px] md:right-[10px]z-20 bg-lime-400 text-black w-12 h-12 rounded-full font-bold text-2xl hover:scale-110 hover:shadow-[0_0_30px_#84cc16] transition-all duration-300"
-                >
-
+                className="absolute right-[-35px] md:right-[10px] z-20 bg-lime-400 text-black w-10 h-10 md:w-12 md:h-12 rounded-full font-bold text-2xl hover:scale-110 transition-all duration-300">
                   →
 
                 </button>
@@ -801,13 +794,12 @@ export default function App() {
 
             {/* VIDEO */}
 
-            <video
-              src={videoAtual}
-              controls
-              autoPlay
-              className="w-full rounded-2xl max-h-[80vh] object-cover"
-            ></video>
-
+          <video
+  src={videoAtual}
+  controls
+  autoPlay
+  className="w-full rounded-2xl max-h-[80vh] object-contain"
+></video>
           </div>
 
         </div>
