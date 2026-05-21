@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import logo from "./assets/logo lobo.jpeg"
 import apresentacaoVideo from "./assets/videoapresentacao/apresentacao.mp4"
 import print1 from "./assets/prints/print1.jpeg"
@@ -29,6 +29,19 @@ export default function App() {
   const [videoAtual, setVideoAtual] = useState("")
 
   const [printAtual, setPrintAtual] = useState(0)
+  useEffect(() => {
+
+  const intervalo = setInterval(() => {
+
+    setPrintAtual((prev) =>
+      prev === prints.length - 1 ? 0 : prev + 1
+    )
+
+  }, 1000)
+
+  return () => clearInterval(intervalo)
+
+}, [])
   return (
 
     <div className="min-h-screen bg-black text-white relative overflow-hidden">
@@ -57,7 +70,7 @@ export default function App() {
             className="wolf-logo w-14 h-14 rounded-full shadow-[0_0_20px_#84cc16] hover:scale-110 transition-all duration-500"
           />
 
-          <h1 className="text-3xl font-extrabold text-lime-400">
+         <h1 className="text-3xl font-extrabold text-lime-400 hover:scale-110 transition-all duration-500 animate-pulse drop-shadow-[0_0_15px_#84cc16]">
 
             FORJA CURSOS
 
@@ -579,7 +592,7 @@ export default function App() {
                         : printAtual - 1
                     )
                   }
-                  className="absolute left-[-10px] md:left-[-25px] z-20 bg-lime-400 text-black w-12 h-12 rounded-full font-bold text-2xl hover:scale-110 hover:shadow-[0_0_30px_#84cc16] transition-all duration-300"
+                 className="absolute left-[-35px] md:left-[10px]z-20 bg-lime-400 text-black w-12 h-12 rounded-full font-bold text-2xl hover:scale-110 hover:shadow-[0_0_30px_#84cc16] transition-all duration-300"
                 >
 
                   ←
@@ -593,7 +606,7 @@ export default function App() {
                   <img
                     src={prints[printAtual]}
                     alt="Print"
-                    className="w-[260px] md:w-[300px] lg:w-[340px]"
+                 className="w-[260px] md:w-[300px] lg:w-[320px] rounded-[32px] border border-lime-400 shadow-[0_0_60px_rgba(132,204,22,0.18)] hover:scale-[1.02] transition-all duration-500"
                   />
 
                 </div>
@@ -608,7 +621,7 @@ export default function App() {
                         : printAtual + 1
                     )
                   }
-                  className="absolute right-[-10px] md:right-[-25px] z-20 bg-lime-400 text-black w-12 h-12 rounded-full font-bold text-2xl hover:scale-110 hover:shadow-[0_0_30px_#84cc16] transition-all duration-300"
+                className="absolute right-[-35px] md:right-[10px]z-20 bg-lime-400 text-black w-12 h-12 rounded-full font-bold text-2xl hover:scale-110 hover:shadow-[0_0_30px_#84cc16] transition-all duration-300"
                 >
 
                   →
