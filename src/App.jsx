@@ -31,26 +31,26 @@ export default function App() {
   const [printAtual, setPrintAtual] = useState(0)
   useEffect(() => {
 
-  const intervalo = setInterval(() => {
+    const intervalo = setInterval(() => {
 
-    setPrintAtual((prev) =>
-      prev === prints.length - 1 ? 0 : prev + 1
-    )
+      setPrintAtual((prev) =>
+        prev === prints.length - 1 ? 0 : prev + 1
+      )
 
-  }, 4000)
+    }, 4000)
 
-  return () => clearInterval(intervalo)
+    return () => clearInterval(intervalo)
 
-}, [])
+  }, [])
   return (
 
     <div className="min-h-screen bg-black text-white relative overflow-hidden">
 
       {/* FUNDO GLOW */}
 
-    <div className="absolute top-[-150px] left-[-150px] w-[300px] h-[300px] bg-lime-400 opacity-10 blur-[70px] rounded-full"></div>
+      <div className="absolute top-[-150px] left-[-150px] w-[300px] h-[300px] bg-lime-400 opacity-10 blur-[70px] rounded-full"></div>
 
-<div className="absolute bottom-[-150px] right-[-150px] w-[300px] h-[300px] bg-green-500 opacity-10 blur-[70px] rounded-full"></div>
+      <div className="absolute bottom-[-150px] right-[-150px] w-[300px] h-[300px] bg-green-500 opacity-10 blur-[70px] rounded-full"></div>
 
 
       {/* HEADER */}
@@ -65,7 +65,7 @@ export default function App() {
             className="wolf-logo w-14 h-14 rounded-full shadow-[0_0_20px_#84cc16] hover:scale-110 transition-all duration-500"
           />
 
-         <h1 className="text-3xl font-extrabold text-lime-400 hover:scale-110 transition-all duration-500 animate-pulse drop-shadow-[0_0_15px_#84cc16]">
+          <h1 className="text-3xl font-extrabold text-lime-400 hover:scale-110 transition-all duration-500 animate-pulse drop-shadow-[0_0_15px_#84cc16]">
 
             FORJA CURSOS
 
@@ -83,7 +83,7 @@ export default function App() {
 
           Acesse
 
-          <span className="text-lime-400"> +1000 Cursos </span>
+          <span className="text-lime-400"> +2500 Cursos </span>
 
           em Um Só Lugar
 
@@ -105,22 +105,22 @@ export default function App() {
             QUERO ACESSAR AGORA
 
           </a>
-</button>
-      
-<div className="mt-20 w-full flex justify-center px-4">
+        </button>
 
- <div className="relative w-full max-w-3xl rounded-[24px] overflow-hidden border border-lime-400 bg-zinc-900 shadow-[0_0_30px_rgba(132,204,22,0.12)]">
+        <div className="mt-20 w-full flex justify-center px-4">
 
-<video
-  src={apresentacaoVideo}
-  controls
-  preload="none"
-  className="w-full rounded-[20px]"
-/>
+          <div className="relative w-full max-w-3xl rounded-[24px] overflow-hidden border border-lime-400 bg-zinc-900 shadow-[0_0_30px_rgba(132,204,22,0.12)]">
 
-  </div>
+            <video
+              src={apresentacaoVideo}
+              controls
+              preload="none"
+              className="w-full rounded-[20px]"
+            />
 
-</div>
+          </div>
+
+        </div>
       </section>
       {/* ÁREA DOS CURSOS */}
 
@@ -473,7 +473,7 @@ export default function App() {
 
             <p className="text-zinc-400 text-lg md:text-xl max-w-3xl mx-auto">
 
-              Mais de 1000 cursos completos para você aprender,
+              Mais de 2500 cursos completos para você aprender,
               evoluir e começar a ganhar dinheiro online.
 
             </p>
@@ -484,13 +484,13 @@ export default function App() {
 
               <p className="text-zinc-500 line-through text-2xl">
 
-                De R$497,00
+                De R$397,00
 
               </p>
 
               <h3 className="text-5xl sm:text-6xl md:text-8xl font-extrabold text-lime-400 mt-4">
 
-                R$47,90
+                R$37,90
 
               </h3>
 
@@ -587,7 +587,7 @@ export default function App() {
                         : printAtual - 1
                     )
                   }
-               className="absolute left-[-35px] md:left-[10px] z-20 bg-lime-400 text-black w-10 h-10 md:w-12 md:h-12 rounded-full font-bold text-2xl hover:scale-110 transition-all duration-300"
+                  className="absolute left-[-35px] md:left-[10px] z-20 bg-lime-400 text-black w-10 h-10 md:w-12 md:h-12 rounded-full font-bold text-2xl hover:scale-110 transition-all duration-300"
                 >
 
                   ←
@@ -601,7 +601,7 @@ export default function App() {
                   <img
                     src={prints[printAtual]}
                     alt="Print"
-                 className="w-[250px] md:w-[290px] lg:w-[310px] rounded-[28px] border border-lime-400 shadow-[0_0_30px_rgba(132,204,22,0.12)] transition-all duration-500"
+                    className="w-[250px] md:w-[290px] lg:w-[310px] rounded-[28px] border border-lime-400 shadow-[0_0_30px_rgba(132,204,22,0.12)] transition-all duration-500"
                   />
 
                 </div>
@@ -616,7 +616,7 @@ export default function App() {
                         : printAtual + 1
                     )
                   }
-                className="absolute right-[-35px] md:right-[10px] z-20 bg-lime-400 text-black w-10 h-10 md:w-12 md:h-12 rounded-full font-bold text-2xl hover:scale-110 transition-all duration-300">
+                  className="absolute right-[-35px] md:right-[10px] z-20 bg-lime-400 text-black w-10 h-10 md:w-12 md:h-12 rounded-full font-bold text-2xl hover:scale-110 transition-all duration-300">
                   →
 
                 </button>
@@ -794,12 +794,12 @@ export default function App() {
 
             {/* VIDEO */}
 
-          <video
-  src={videoAtual}
-  controls
-  autoPlay
-  className="w-full rounded-2xl max-h-[80vh] object-contain"
-></video>
+            <video
+              src={videoAtual}
+              controls
+              autoPlay
+              className="w-full rounded-2xl max-h-[80vh] object-contain"
+            ></video>
           </div>
 
         </div>
