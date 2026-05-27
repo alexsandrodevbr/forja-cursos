@@ -490,7 +490,7 @@ export default function App() {
 
               <h3 className="text-5xl sm:text-6xl md:text-8xl font-extrabold text-lime-400 mt-4">
 
-                R$37,90
+                R$37,99
 
               </h3>
 
