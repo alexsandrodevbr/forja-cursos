@@ -110,14 +110,16 @@ export default function App() {
         <div className="mt-20 w-full flex justify-center px-4">
 
           <div className="relative w-full max-w-3xl rounded-[24px] overflow-hidden border border-lime-400 bg-zinc-900 shadow-[0_0_30px_rgba(132,204,22,0.12)]">
-
             <video
               src={apresentacaoVideo}
+              autoPlay
+              muted
+              loop
+              playsInline
               controls
               preload="none"
               className="w-full rounded-[20px]"
             />
-
           </div>
 
         </div>
