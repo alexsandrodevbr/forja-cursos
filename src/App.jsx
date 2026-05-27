@@ -484,7 +484,7 @@ export default function App() {
 
               <p className="text-zinc-500 line-through text-2xl">
 
-                De R$397,00
+                De R$3397,00
 
               </p>
 
