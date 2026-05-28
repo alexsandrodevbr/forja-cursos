@@ -108,58 +108,62 @@ export default function App() {
 
           </a>
         </button>
-
-        <div className="mt-20 w-full flex justify-center px-4">
-
-          <div className="relative w-full max-w-3xl rounded-[24px] overflow-hidden border border-lime-400 bg-zinc-900 shadow-[0_0_30px_rgba(132,204,22,0.12)]">
-            <video
-              src={apresentacaoVideo}
-              autoPlay
-              muted
-              loop
-              playsInline
-              controls
-              preload="none"
-              className="w-full rounded-[20px]"
-            />
-          </div>
-          {/* BARRA PREMIUM */}
-
-          <section className="w-full py-5 px-6 bg-black border-y border-lime-400/30">
-
-            <div className="max-w-3xl mx-auto text-center">
-
-              <p className="text-lime-400 font-extrabold tracking-[4px] text-xs md:text-sm uppercase drop-shadow-[0_0_10px_#84cc16]">
-
-                ⚡ Vagas promocionais liberadas
-
-              </p>
-
-              <div className="w-full bg-zinc-900 rounded-full h-3 mt-4 overflow-hidden border border-lime-400/20 shadow-[0_0_20px_rgba(132,204,22,0.15)]">
-
-                <div className="h-full w-[82%] bg-gradient-to-r from-lime-300 via-lime-400 to-green-500 rounded-full animate-pulse shadow-[0_0_20px_#84cc16]"></div>
-
-              </div>
-
-              <p className="text-zinc-300 mt-3 text-sm md:text-base font-semibold">
-
-                Restam apenas
-
-                <span className="text-lime-400 font-extrabold drop-shadow-[0_0_10px_#84cc16]">
-
-                  {" "}25 acessos
-
-                </span>
-
-                nesta condição especial
-
-              </p>
-
-            </div>
-
-          </section>
-        </div>
       </section>
+      <div className="mt-20 w-full flex justify-center px-4">
+
+        <div className="relative w-full max-w-3xl rounded-[24px] overflow-hidden border border-lime-400 bg-zinc-900 shadow-[0_0_30px_rgba(132,204,22,0.12)]">
+
+          <video
+            src={apresentacaoVideo}
+            autoPlay
+            muted
+            loop
+            playsInline
+            controls
+            preload="none"
+            className="w-full rounded-[20px]"
+          />
+
+        </div>
+
+      </div>
+
+      {/* BARRA PREMIUM */}
+
+      <section className="w-full py-5 px-6 bg-black border-y border-lime-400/30 mt-10">
+
+        <div className="max-w-3xl mx-auto text-center">
+
+          <p className="text-lime-400 font-extrabold tracking-[4px] text-xs md:text-sm uppercase drop-shadow-[0_0_10px_#84cc16]">
+
+            ⚡ Vagas promocionais liberadas
+
+          </p>
+
+          <div className="w-full bg-zinc-900 rounded-full h-3 mt-4 overflow-hidden border border-lime-400/20 shadow-[0_0_20px_rgba(132,204,22,0.15)]">
+
+            <div className="h-full w-[82%] bg-gradient-to-r from-lime-300 via-lime-400 to-green-500 rounded-full animate-pulse shadow-[0_0_20px_#84cc16]"></div>
+
+          </div>
+
+          <p className="text-zinc-300 mt-3 text-sm md:text-base font-semibold">
+
+            Restam apenas
+
+            <span className="text-lime-400 font-extrabold drop-shadow-[0_0_10px_#84cc16]">
+
+              {" "}25 acessos
+
+            </span>
+
+            nesta condição especial
+
+          </p>
+
+        </div>
+
+      </section>
+
       {/* ÁREA DOS CURSOS */}
 
       <section className="px-8 pb-20">
