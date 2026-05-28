@@ -546,6 +546,82 @@ export default function App() {
 
       </section>
 
+  {/* OFERTA FINAL PREMIUM */}
+
+<section className="w-full py-24 px-4 bg-[#050816]">
+
+  <div className="max-w-5xl mx-auto rounded-[32px] border border-lime-400/30 bg-gradient-to-br from-[#111111] to-[#10131f] p-10 md:p-16 text-center shadow-[0_0_60px_rgba(132,204,22,0.12)]">
+
+    <h2 className="text-white font-black leading-tight text-4xl md:text-7xl">
+      Tenha Acesso à
+      <span className="text-lime-400 drop-shadow-[0_0_20px_#84cc16]">
+        {" "}Biblioteca Completa
+      </span>
+    </h2>
+
+    <p className="text-zinc-300 mt-6 max-w-2xl mx-auto text-lg leading-relaxed">
+      Mais de 2500 cursos completos para você aprender,
+      evoluir e começar a ganhar dinheiro online.
+    </p>
+
+    <div className="mt-8">
+      <p className="text-zinc-500 line-through text-2xl">
+        De R$397,90
+      </p>
+
+      <h1 className="text-lime-400 font-black text-6xl md:text-8xl drop-shadow-[0_0_35px_rgba(132,204,22,0.45)]">
+        R$37,99
+      </h1>
+
+      <p className="text-zinc-400 mt-2">
+        pagamento único • acesso vitalício
+      </p>
+    </div>
+
+    {/* BENEFÍCIOS */}
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-12">
+
+      <div className="bg-[#161b2e] border border-lime-400/20 rounded-2xl py-5 px-4">
+        <p className="text-lime-400 font-bold">
+          ✅ Acesso imediato
+        </p>
+      </div>
+
+      <div className="bg-[#161b2e] border border-lime-400/20 rounded-2xl py-5 px-4">
+        <p className="text-lime-400 font-bold">
+          🔄 Atualizações Frequentes
+        </p>
+      </div>
+
+      <div className="bg-[#161b2e] border border-lime-400/20 rounded-2xl py-5 px-4">
+        <p className="text-lime-400 font-bold">
+          🚀 Cursos Premium
+        </p>
+      </div>
+
+    </div>
+
+    {/* BOTÃO */}
+
+    <a
+      href="https://pay.cakto.com.br/hj6rqht_900869"
+      target="_blank"
+      className="inline-block mt-14"
+    >
+
+      <button className="bg-lime-400 hover:bg-lime-300 text-black font-black text-lg md:text-2xl px-10 md:px-16 py-5 rounded-2xl transition-all duration-300 hover:scale-105 shadow-[0_0_40px_rgba(132,204,22,0.55)]">
+
+        QUERO ENTRA AGORA
+
+      </button>
+
+    </a>
+
+  </div>
+
+</section>
+
       {/* ÁREA PREMIUM */}
 
       <section className="px-8 py-20">
