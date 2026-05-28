@@ -75,33 +75,7 @@ export default function App() {
 
       </header>
 
-      {/* BARRA DE ESCASSEZ */}
 
-      <section className="w-full bg-[#2b0000] border-t border-b border-red-500 py-6 px-6">
-
-        <div className="max-w-4xl mx-auto text-center">
-
-          <p className="text-orange-400 font-bold tracking-[3px] text-sm md:text-base uppercase">
-
-            ⚠ Vagas com preço promocional
-
-          </p>
-
-          <div className="w-full bg-black/40 rounded-full h-4 mt-4 overflow-hidden border border-red-900">
-
-            <div className="h-full w-[75%] bg-gradient-to-r from-pink-500 to-orange-500 rounded-full animate-pulse"></div>
-
-          </div>
-
-          <p className="text-orange-300 mt-3 font-semibold text-sm md:text-base">
-
-            Restam apenas 25 acessos nesta condição especial
-
-          </p>
-
-        </div>
-
-      </section>
 
       {/* HERO SECTION */}
 
@@ -149,7 +123,41 @@ export default function App() {
               className="w-full rounded-[20px]"
             />
           </div>
+          {/* BARRA PREMIUM */}
 
+          <section className="w-full py-5 px-6 bg-black border-y border-lime-400/30">
+
+            <div className="max-w-3xl mx-auto text-center">
+
+              <p className="text-lime-400 font-extrabold tracking-[4px] text-xs md:text-sm uppercase drop-shadow-[0_0_10px_#84cc16]">
+
+                ⚡ Vagas promocionais liberadas
+
+              </p>
+
+              <div className="w-full bg-zinc-900 rounded-full h-3 mt-4 overflow-hidden border border-lime-400/20 shadow-[0_0_20px_rgba(132,204,22,0.15)]">
+
+                <div className="h-full w-[82%] bg-gradient-to-r from-lime-300 via-lime-400 to-green-500 rounded-full animate-pulse shadow-[0_0_20px_#84cc16]"></div>
+
+              </div>
+
+              <p className="text-zinc-300 mt-3 text-sm md:text-base font-semibold">
+
+                Restam apenas
+
+                <span className="text-lime-400 font-extrabold drop-shadow-[0_0_10px_#84cc16]">
+
+                  {" "}25 acessos
+
+                </span>
+
+                nesta condição especial
+
+              </p>
+
+            </div>
+
+          </section>
         </div>
       </section>
       {/* ÁREA DOS CURSOS */}
