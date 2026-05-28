@@ -109,41 +109,62 @@ export default function App() {
           </a>
         </button>
       </section>
-      {/* BARRA PREMIUM */}
+   {/* VIDEO PRINCIPAL */}
 
-      <section className="w-full py-6 px-6 bg-gradient-to-b from-black via-zinc-950 to-black mt-10">
+<div className="mt-20 w-full flex flex-col items-center px-4">
 
-        <div className="max-w-3xl mx-auto text-center bg-zinc-900/40 border border-lime-400/10 rounded-3xl p-6 shadow-[0_0_40px_rgba(132,204,22,0.08)] backdrop-blur-sm">
+  <div className="relative w-full max-w-4xl rounded-[28px] overflow-hidden border border-lime-400/30 bg-zinc-900 shadow-[0_0_50px_rgba(132,204,22,0.12)]">
 
-          <p className="text-lime-400 font-extrabold tracking-[5px] text-[11px] md:text-sm uppercase drop-shadow-[0_0_12px_#84cc16] animate-pulse">
+    <video
+      src={apresentacaoVideo}
+      autoPlay
+      muted
+      loop
+      playsInline
+      controls
+      preload="none"
+      className="w-full rounded-[28px]"
+    />
 
-            ⚡ Vagas promocionais liberadas
+  </div>
 
-          </p>
+  {/* BARRA PREMIUM */}
 
-          <div className="w-full bg-black/70 rounded-full h-4 mt-5 overflow-hidden border border-zinc-800 shadow-inner">
+  <div className="w-full max-w-3xl mt-12">
 
-            <div className="h-full w-[82%] rounded-full bg-gradient-to-r from-lime-300 via-lime-400 to-green-500 shadow-[0_0_25px_#84cc16] animate-pulse"></div>
+    <div className="bg-gradient-to-b from-zinc-950 via-black to-zinc-950 border border-lime-400/10 rounded-[32px] p-6 md:p-8 shadow-[0_0_60px_rgba(132,204,22,0.08)] backdrop-blur-sm">
 
-          </div>
+      <p className="text-lime-400 font-extrabold tracking-[6px] text-[11px] md:text-sm uppercase text-center drop-shadow-[0_0_10px_#84cc16]">
 
-          <p className="text-zinc-300 mt-4 text-sm md:text-lg font-semibold">
+        ⚡ Vagas promocionais liberadas
 
-            Restam apenas
+      </p>
 
-            <span className="text-lime-400 font-extrabold text-lg md:text-xl drop-shadow-[0_0_12px_#84cc16]">
+      <div className="w-full bg-zinc-900 rounded-full h-4 mt-6 overflow-hidden border border-zinc-800">
 
-              {" "}25 acessos
+        <div className="h-full w-[82%] rounded-full bg-gradient-to-r from-lime-300 via-lime-400 to-green-500 shadow-[0_0_25px_#84cc16] animate-pulse"></div>
 
-            </span>
+      </div>
 
-            nesta condição especial
+      <p className="text-zinc-300 mt-5 text-center text-sm md:text-lg font-semibold leading-relaxed">
 
-          </p>
+        Restam apenas
 
-        </div>
+        <span className="text-lime-400 font-extrabold text-lg md:text-2xl drop-shadow-[0_0_10px_#84cc16]">
 
-      </section>
+          {" "}25 acessos
+
+        </span>
+
+        nesta condição especial
+
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
       {/* ÁREA DOS CURSOS */}
 
       <section className="px-8 pb-20">
