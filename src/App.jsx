@@ -109,62 +109,285 @@ export default function App() {
           </a>
         </button>
       </section>
-   {/* VIDEO PRINCIPAL */}
+      {/* VIDEO PRINCIPAL */}
 
-<div className="mt-20 w-full flex flex-col items-center px-4">
+      <div className="mt-20 w-full flex flex-col items-center px-4">
 
-  <div className="relative w-full max-w-4xl rounded-[28px] overflow-hidden border border-lime-400/30 bg-zinc-900 shadow-[0_0_50px_rgba(132,204,22,0.12)]">
+        <div className="relative w-full max-w-4xl rounded-[28px] overflow-hidden border border-lime-400/30 bg-zinc-900 shadow-[0_0_50px_rgba(132,204,22,0.12)]">
 
-    <video
-      src={apresentacaoVideo}
-      autoPlay
-      muted
-      loop
-      playsInline
-      controls
-      preload="none"
-      className="w-full rounded-[28px]"
-    />
+          <video
+            src={apresentacaoVideo}
+            autoPlay
+            muted
+            loop
+            playsInline
+            controls
+            preload="none"
+            className="w-full rounded-[28px]"
+          />
 
-  </div>
+        </div>
 
-  {/* BARRA PREMIUM */}
+        {/* BARRA PREMIUM */}
 
-  <div className="w-full max-w-3xl mt-12">
+        <div className="w-full max-w-3xl mt-12">
 
-    <div className="bg-gradient-to-b from-zinc-950 via-black to-zinc-950 border border-lime-400/10 rounded-[32px] p-6 md:p-8 shadow-[0_0_60px_rgba(132,204,22,0.08)] backdrop-blur-sm">
+          <div className="bg-gradient-to-b from-zinc-950 via-black to-zinc-950 border border-lime-400/10 rounded-[32px] p-6 md:p-8 shadow-[0_0_60px_rgba(132,204,22,0.08)] backdrop-blur-sm">
 
-      <p className="text-lime-400 font-extrabold tracking-[6px] text-[11px] md:text-sm uppercase text-center drop-shadow-[0_0_10px_#84cc16]">
+            <p className="text-lime-400 font-extrabold tracking-[6px] text-[11px] md:text-sm uppercase text-center drop-shadow-[0_0_10px_#84cc16]">
 
-        ⚡ Vagas promocionais liberadas
+              ⚡ Vagas promocionais liberadas
 
-      </p>
+            </p>
 
-      <div className="w-full bg-zinc-900 rounded-full h-4 mt-6 overflow-hidden border border-zinc-800">
+            <div className="w-full bg-zinc-900 rounded-full h-4 mt-6 overflow-hidden border border-zinc-800">
 
-        <div className="h-full w-[82%] rounded-full bg-gradient-to-r from-lime-300 via-lime-400 to-green-500 shadow-[0_0_25px_#84cc16] animate-pulse"></div>
+              <div className="h-full w-[82%] rounded-full bg-gradient-to-r from-lime-300 via-lime-400 to-green-500 shadow-[0_0_25px_#84cc16] animate-pulse"></div>
+
+            </div>
+
+            <p className="text-zinc-300 mt-5 text-center text-sm md:text-lg font-semibold leading-relaxed">
+
+              Restam apenas
+
+              <span className="text-lime-400 font-extrabold text-lg md:text-2xl drop-shadow-[0_0_10px_#84cc16]">
+
+                {" "}25 acessos
+
+              </span>
+
+              nesta condição especial
+
+            </p>
+
+          </div>
+
+        </div>
 
       </div>
 
-      <p className="text-zinc-300 mt-5 text-center text-sm md:text-lg font-semibold leading-relaxed">
+      {/* O QUE TEM DENTRO DA BLUETECH */}
 
-        Restam apenas
+      <section className="w-full px-6 py-28 bg-gradient-to-b from-black via-zinc-950 to-black">
 
-        <span className="text-lime-400 font-extrabold text-lg md:text-2xl drop-shadow-[0_0_10px_#84cc16]">
+        <div className="max-w-7xl mx-auto">
 
-          {" "}25 acessos
+          {/* TOPO */}
 
-        </span>
+          <div className="mb-20 text-center">
 
-        nesta condição especial
+            <div className="inline-flex items-center px-6 py-3 rounded-full border border-lime-400/20 bg-zinc-900/50 shadow-[0_0_25px_rgba(132,204,22,0.08)]">
 
-      </p>
+              <span className="text-lime-400 text-xs md:text-sm font-extrabold tracking-[5px] uppercase">
 
-    </div>
+                ⚡ Tudo que você recebe
 
-  </div>
+              </span>
 
-</div>
+            </div>
+
+            <h2 className="text-5xl md:text-7xl font-extrabold text-white mt-10 leading-tight">
+
+              O Que Existe
+
+              <br />
+
+              <span className="text-lime-400 drop-shadow-[0_0_18px_#84cc16]">
+
+                Dentro da Biblioteca FORJA CURSOS
+
+              </span>
+
+            </h2>
+
+            <p className="text-zinc-400 text-lg mt-8 max-w-4xl mx-auto leading-relaxed">
+
+              Uma biblioteca completa criada para acelerar seus resultados
+              no digital com conteúdos premium, ferramentas profissionais
+              e bônus exclusivos.
+
+            </p>
+
+          </div>
+
+          {/* CARDS */}
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            {/* CARD */}
+
+            <div className="bg-zinc-900/50 border border-lime-400/10 rounded-[32px] p-8 hover:scale-[1.03] hover:border-lime-400/40 transition-all duration-300 shadow-[0_0_40px_rgba(132,204,22,0.06)]">
+
+              <div className="text-5xl mb-6">🎥</div>
+
+              <h3 className="text-4xl font-extrabold text-lime-400">
+
+                2500+
+
+              </h3>
+
+              <h4 className="text-2xl font-bold text-white mt-4">
+
+                Cursos Premium
+
+              </h4>
+
+              <p className="text-zinc-400 mt-5 leading-relaxed">
+
+                Marketing Digital, Inteligência Artificial,
+                Programação, Design, Edição de Vídeo,
+                Social Media, Tráfego Pago e muito mais.
+
+              </p>
+
+            </div>
+
+            {/* CARD */}
+
+            <div className="bg-zinc-900/50 border border-lime-400/10 rounded-[32px] p-8 hover:scale-[1.03] hover:border-lime-400/40 transition-all duration-300 shadow-[0_0_40px_rgba(132,204,22,0.06)]">
+
+              <div className="text-5xl mb-6">📚</div>
+
+              <h3 className="text-4xl font-extrabold text-lime-400">
+
+                300+
+
+              </h3>
+
+              <h4 className="text-2xl font-bold text-white mt-4">
+
+                eBooks Exclusivos
+
+              </h4>
+
+              <p className="text-zinc-400 mt-5 leading-relaxed">
+
+                Materiais completos para estudo,
+                estratégias de vendas, mentalidade,
+                marketing e crescimento financeiro.
+
+              </p>
+
+            </div>
+
+            {/* CARD */}
+
+            <div className="bg-zinc-900/50 border border-lime-400/10 rounded-[32px] p-8 hover:scale-[1.03] hover:border-lime-400/40 transition-all duration-300 shadow-[0_0_40px_rgba(132,204,22,0.06)]">
+
+              <div className="text-5xl mb-6">🤖</div>
+
+              <h3 className="text-4xl font-extrabold text-lime-400">
+
+                IA Premium
+
+              </h3>
+
+              <h4 className="text-2xl font-bold text-white mt-4">
+
+                Inteligência Artificial
+
+              </h4>
+
+              <p className="text-zinc-400 mt-5 leading-relaxed">
+
+                Ferramentas, prompts e conteúdos
+                sobre IA para produtividade,
+                automação e criação de conteúdo.
+
+              </p>
+
+            </div>
+
+            {/* CARD */}
+
+            <div className="bg-zinc-900/50 border border-lime-400/10 rounded-[32px] p-8 hover:scale-[1.03] hover:border-lime-400/40 transition-all duration-300 shadow-[0_0_40px_rgba(132,204,22,0.06)]">
+
+              <div className="text-5xl mb-6">💻</div>
+
+              <h3 className="text-4xl font-extrabold text-lime-400">
+
+                Ferramentas
+
+              </h3>
+
+              <h4 className="text-2xl font-bold text-white mt-4">
+
+                Recursos Profissionais
+
+              </h4>
+
+              <p className="text-zinc-400 mt-5 leading-relaxed">
+
+                Plataformas, apps, templates,
+                softwares e recursos utilizados
+                pelos maiores profissionais.
+
+              </p>
+
+            </div>
+
+            {/* CARD */}
+
+            <div className="bg-zinc-900/50 border border-lime-400/10 rounded-[32px] p-8 hover:scale-[1.03] hover:border-lime-400/40 transition-all duration-300 shadow-[0_0_40px_rgba(132,204,22,0.06)]">
+
+              <div className="text-5xl mb-6">🎁</div>
+
+              <h3 className="text-4xl font-extrabold text-lime-400">
+
+                Bônus VIP
+
+              </h3>
+
+              <h4 className="text-2xl font-bold text-white mt-4">
+
+                Conteúdos Extras
+
+              </h4>
+
+              <p className="text-zinc-400 mt-5 leading-relaxed">
+
+                Packs exclusivos, estratégias secretas,
+                atualizações constantes e conteúdos
+                adicionados frequentemente.
+
+              </p>
+
+            </div>
+
+            {/* CARD */}
+
+            <div className="bg-zinc-900/50 border border-lime-400/10 rounded-[32px] p-8 hover:scale-[1.03] hover:border-lime-400/40 transition-all duration-300 shadow-[0_0_40px_rgba(132,204,22,0.06)]">
+
+              <div className="text-5xl mb-6">♾️</div>
+
+              <h3 className="text-4xl font-extrabold text-lime-400">
+
+                Vitalício
+
+              </h3>
+
+              <h4 className="text-2xl font-bold text-white mt-4">
+
+                Acesso Completo
+
+              </h4>
+
+              <p className="text-zinc-400 mt-5 leading-relaxed">
+
+                Pagamento único com acesso vitalício
+                a toda plataforma sem mensalidades
+                e sem limites.
+
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
       {/* ÁREA DOS CURSOS */}
 
       <section className="px-8 pb-20">
