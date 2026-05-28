@@ -75,6 +75,34 @@ export default function App() {
 
       </header>
 
+      {/* BARRA DE ESCASSEZ */}
+
+      <section className="w-full bg-[#2b0000] border-t border-b border-red-500 py-6 px-6">
+
+        <div className="max-w-4xl mx-auto text-center">
+
+          <p className="text-orange-400 font-bold tracking-[3px] text-sm md:text-base uppercase">
+
+            ⚠ Vagas com preço promocional
+
+          </p>
+
+          <div className="w-full bg-black/40 rounded-full h-4 mt-4 overflow-hidden border border-red-900">
+
+            <div className="h-full w-[75%] bg-gradient-to-r from-pink-500 to-orange-500 rounded-full animate-pulse"></div>
+
+          </div>
+
+          <p className="text-orange-300 mt-3 font-semibold text-sm md:text-base">
+
+            Restam apenas 25 acessos nesta condição especial
+
+          </p>
+
+        </div>
+
+      </section>
+
       {/* HERO SECTION */}
 
       <section className="flex flex-col items-center justify-center text-center px-6 py-24">
