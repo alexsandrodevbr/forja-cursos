@@ -145,42 +145,45 @@ export default function App() {
         </div>
 
         {/* BARRA PREMIUM */}
+        
+< div className="w-full max-w-3xl mt-12">
 
-        <div className="w-full max-w-3xl mt-12">
+  <div className="bg-[#080808] border border-lime-400/20 rounded-[32px] p-8 shadow-[0_0_40px_rgba(132,204,22,0.08)]">
 
-          <div className="h-full w-[82%] bg-gradient-to-r from-red-500 via-orange-500 to-yellow-400 rounded-full animate-pulse shadow-[0_0_30px_rgba(255,60,0,0.65)]">
+    <p className="text-lime-400 font-extrabold tracking-[6px] text-[11px] md:text-sm uppercase text-center drop-shadow-[0_0_10px_#84cc16]">
 
-            <p className="text-lime-400 font-extrabold tracking-[6px] text-[11px] md:text-sm uppercase text-center drop-shadow-[0_0_10px_#84cc16]">
+      ⚡ Vagas promocionais liberadas
 
-              ⚡ Vagas promocionais liberadas
+    </p>
 
-            </p>
+    {/* FUNDO DA BARRA */}
 
-            <div className="w-full bg-zinc-900 rounded-full h-4 mt-6 overflow-hidden border border-zinc-800">
+    <div className="w-full bg-zinc-900 rounded-full h-4 mt-6 overflow-hidden border border-zinc-800">
 
-              <div className="h-full w-[82%] rounded-full bg-gradient-to-r from-lime-300 via-lime-400 to-green-500 shadow-[0_0_25px_#84cc16] animate-pulse"></div>
+      {/* BARRA VERMELHA */}
 
-            </div>
+      <div className="h-full w-[82%] rounded-full bg-gradient-to-r from-red-700 via-red-500 to-red-400 shadow-[0_0_25px_rgba(255,0,0,0.7)] animate-pulse"></div>
 
-            <p className="text-zinc-300 mt-5 text-center text-sm md:text-lg font-semibold leading-relaxed">
+    </div>
 
-              Restam apenas
+    <p className="text-zinc-300 mt-5 text-center text-sm md:text-lg font-semibold leading-relaxed">
 
-              <span className="text-lime-400 font-extrabold text-lg md:text-2xl drop-shadow-[0_0_10px_#84cc16]">
+      Restam apenas
 
-                {" "}25 acessos
+      <span className="text-red-500 font-extrabold text-lg md:text-2xl drop-shadow-[0_0_10px_red] animate-pulse">
 
-              </span>
+        {" "}25 acessos{" "}
 
-              nesta condição especial
+      </span>
 
-            </p>
+      nesta condição especial
 
-          </div>
+    </p>
 
-        </div>
+  </div>
 
-      </div>
+</div>
+</div>
 
       {/* O QUE TEM DENTRO DA Biblioteca */}
 
