@@ -585,11 +585,11 @@ export default function App() {
 
           <div className="mt-8">
             <p className="text-zinc-500 line-through text-2xl">
-              De R$397,90
+              De R$4780,00
             </p>
 
             <h1 className="text-lime-400 font-black text-6xl md:text-8xl drop-shadow-[0_0_35px_rgba(132,204,22,0.45)]">
-              R$37,99
+              R$19,90
             </h1>
 
             <p className="text-zinc-400 mt-2">
