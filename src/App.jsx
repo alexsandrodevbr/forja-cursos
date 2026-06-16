@@ -1,47 +1,47 @@
-import { useState, useEffect } from "react"
-import logo from "./assets/logo lobo.jpeg"
-import apresentacaoVideo from "./assets/videoapresentacao/apresentacao.mp4"
-import print1 from "./assets/prints/print1.jpeg"
-import print2 from "./assets/prints/print2.jpeg"
-import print3 from "./assets/prints/print3.jpeg"
-import print4 from "./assets/prints/print4.jpeg"
-import print5 from "./assets/prints/print5.jpeg"
-import print6 from "./assets/prints/print6.jpeg"
-import print7 from "./assets/prints/print7.jpeg"
-import marketingVideo from "./assets/video/marketing.mp4"
-import iaVideo from "./assets/video/ia.mp4"
-import edicaoVideo from "./assets/video/edicao.mp4"
-import programacaoVideo from "./assets/video/programacao.mp4"
-const prints = [
+import { useState, useEffect } from "react";
+import logo from "./assets/logo lobo.jpeg";
+import apresentacaoVideo from "./assets/videoapresentacao/apresentacao.mp4";
 
-  print1,
-  print2,
-  print3,
-  print4,
-  print5,
-  print6,
-  print7
+import print1 from "./assets/prints/print1.jpeg";
+import print2 from "./assets/prints/print2.jpeg";
+import print3 from "./assets/prints/print3.jpeg";
+import print4 from "./assets/prints/print4.jpeg";
+import print5 from "./assets/prints/print5.jpeg";
+import print6 from "./assets/prints/print6.jpeg";
+import print7 from "./assets/prints/print7.jpeg";
 
-]
+import marketingVideo from "./assets/video/marketing.mp4";
+import iaVideo from "./assets/video/ia.mp4";
+import edicaoVideo from "./assets/video/edicao.mp4";
+import programacaoVideo from "./assets/video/programacao.mp4";
+
 export default function App() {
-  const [videoAberto, setVideoAberto] = useState(false)
 
-  const [videoAtual, setVideoAtual] = useState("")
+  const [videoAberto, setVideoAberto] = useState(false);
+  const [videoAtual, setVideoAtual] = useState("");
 
-  const [printAtual, setPrintAtual] = useState(0)
+  const [printAtual, setPrintAtual] = useState(0);
+
+  const prints = [
+    print1,
+    print2,
+    print3,
+    print4,
+    print5,
+    print6,
+    print7
+  ];
+
   useEffect(() => {
-
     const intervalo = setInterval(() => {
-
       setPrintAtual((prev) =>
         prev === prints.length - 1 ? 0 : prev + 1
-      )
+      );
+    }, 4000);
 
-    }, 4000)
+    return () => clearInterval(intervalo);
+  }, []);
 
-    return () => clearInterval(intervalo)
-
-  }, [])
   return (
 
     <div className="min-h-screen bg-black text-white relative overflow-hidden">
@@ -83,12 +83,12 @@ export default function App() {
 
         <h2 className="text-4xl sm:text-5xl md:text-7xl font-extrabold max-w-5xl leading-tight">
 
-          Acesse
+          TENHA ACESSO
 
           <span className="text-lime-400"> +2500 Cursos </span>
 
-          em Um Só Lugar
-
+          POR APENAS
+          <span className="text-lime-400"> R$ 19,90 </span>
         </h2>
 
         <p className="text-zinc-400 text-base md:text-xl mt-8 max-w-2xl">
@@ -119,7 +119,7 @@ export default function App() {
     "
           >
 
-            QUERO ACESSAR AGORA
+            QUERO MEU ACESSO POR R$ 19,90
 
           </button>
 
@@ -145,45 +145,46 @@ export default function App() {
         </div>
 
         {/* BARRA PREMIUM */}
-        
-< div className="w-full max-w-3xl mt-12">
 
-  <div className="bg-[#080808] border border-lime-400/20 rounded-[32px] p-8 shadow-[0_0_40px_rgba(132,204,22,0.08)]">
+        < div className="w-full max-w-3xl mt-12">
 
-    <p className="text-lime-400 font-extrabold tracking-[6px] text-[11px] md:text-sm uppercase text-center drop-shadow-[0_0_10px_#84cc16]">
+          <div className="bg-[#080808] border border-lime-400/20 rounded-[32px] p-8 shadow-[0_0_40px_rgba(132,204,22,0.08)]">
 
-      ⚡ Vagas promocionais liberadas
+            <p className="text-lime-400 font-extrabold tracking-[6px] text-[11px] md:text-sm uppercase text-center drop-shadow-[0_0_10px_#84cc16]">
 
-    </p>
+              ⚡ Vagas promocionais liberadas
 
-    {/* FUNDO DA BARRA */}
+            </p>
 
-    <div className="w-full bg-zinc-900 rounded-full h-4 mt-6 overflow-hidden border border-zinc-800">
+            {/* FUNDO DA BARRA */}
 
-      {/* BARRA VERMELHA */}
+            <div className="w-full bg-zinc-900 rounded-full h-4 mt-6 overflow-hidden border border-zinc-800">
 
-      <div className="h-full w-[82%] rounded-full bg-gradient-to-r from-red-700 via-red-500 to-red-400 shadow-[0_0_25px_rgba(255,0,0,0.7)] animate-pulse"></div>
+              {/* BARRA VERMELHA */}
 
-    </div>
+              <div className="h-full w-[82%] rounded-full bg-gradient-to-r from-red-700 via-red-500 to-red-400 shadow-[0_0_25px_rgba(255,0,0,0.7)] animate-pulse"></div>
 
-    <p className="text-zinc-300 mt-5 text-center text-sm md:text-lg font-semibold leading-relaxed">
+            </div>
 
-      Restam apenas
+            <p className="text-zinc-300 mt-5 text-center text-sm md:text-lg font-semibold leading-relaxed">
 
-      <span className="text-red-500 font-extrabold text-lg md:text-2xl drop-shadow-[0_0_10px_red] animate-pulse">
+              Restam apenas
 
-        {" "}25 acessos{" "}
+              <span className="text-red-500 font-extrabold text-lg md:text-2xl drop-shadow-[0_0_10px_red] animate-pulse">
 
-      </span>
+                {" "}25 acessos{" "}
 
-      nesta condição especial
+              </span>
+              
 
-    </p>
+              nesta condição especial
 
-  </div>
+            </p>
 
-</div>
-</div>
+          </div>
+
+        </div>
+      </div>
 
       {/* O QUE TEM DENTRO DA Biblioteca */}
 
@@ -436,20 +437,7 @@ export default function App() {
 
               </h4>
 
-              <button
-                onClick={() => {
 
-                  setVideoAtual(marketingVideo)
-
-                  setVideoAberto(true)
-
-                }}
-                className="w-full bg-lime-400 text-black py-3 rounded-xl font-bold hover:bg-lime-300 transition"
-              >
-
-                ACESSAR
-
-              </button>
             </div>
 
           </div>
@@ -471,20 +459,7 @@ export default function App() {
 
               </h4>
 
-              <button
-                onClick={() => {
 
-                  setVideoAtual(iaVideo)
-
-                  setVideoAberto(true)
-
-                }}
-                className="w-full bg-lime-400 text-black py-3 rounded-xl font-bold hover:bg-lime-300 transition"
-              >
-
-                ACESSAR
-
-              </button>
 
             </div>
 
@@ -506,20 +481,7 @@ export default function App() {
 
               </h4>
 
-              <button
-                onClick={() => {
 
-                  setVideoAtual(edicaoVideo)
-
-                  setVideoAberto(true)
-
-                }}
-                className="w-full bg-lime-400 text-black py-3 rounded-xl font-bold hover:bg-lime-300 transition"
-              >
-
-                ACESSAR
-
-              </button>
 
             </div>
 
@@ -542,20 +504,7 @@ export default function App() {
 
               </h4>
 
-              <button
-                onClick={() => {
 
-                  setVideoAtual(programacaoVideo)
-
-                  setVideoAberto(true)
-
-                }}
-                className="w-full bg-lime-400 text-black py-3 rounded-xl font-bold hover:bg-lime-300 transition"
-              >
-
-                ACESSAR
-
-              </button>
 
             </div>
 
@@ -565,105 +514,99 @@ export default function App() {
 
       </section>
 
-      {/* OFERTA FINAL PREMIUM */}
+     {/* OFERTA FINAL PREMIUM */}
 
-      <section className="w-full py-24 px-4 bg-[#050816]">
+<section className="w-full py-20 px-4 bg-black">
 
-        <div className="max-w-5xl mx-auto rounded-[32px] border border-lime-400/30 bg-gradient-to-br from-[#111111] to-[#10131f] p-10 md:p-16 text-center shadow-[0_0_60px_rgba(132,204,22,0.12)]">
+  <div className="max-w-5xl mx-auto rounded-[32px] border border-lime-400/20 bg-[#0a0a0a] p-10 md:p-16 text-center shadow-[0_0_30px_rgba(132,204,22,0.08)]">
 
-          <h2 className="text-white font-black leading-tight text-4xl md:text-7xl">
-            Tenha Acesso à
-            <span className="text-lime-400 drop-shadow-[0_0_20px_#84cc16]">
-              {" "}Biblioteca Completa
-            </span>
-          </h2>
+    <p className="text-red-500 font-bold text-lg animate-pulse">
+      ⚠️ Oferta promocional por tempo limitado
+    </p>
 
-          <p className="text-zinc-300 mt-6 max-w-2xl mx-auto text-lg leading-relaxed">
-            Mais de 2500 cursos completos para você aprender,
-            evoluir e começar a ganhar dinheiro online.
-          </p>
+    <h2 className="text-white font-black leading-tight text-4xl md:text-7xl mt-4">
+      Tenha Acesso à
+      <span className="text-lime-400 drop-shadow-[0_0_15px_#84cc16]">
+        {" "}Biblioteca Completa
+      </span>
+    </h2>
 
-          <div className="mt-8">
-            <p className="text-zinc-500 line-through text-2xl">
-              De R$4780,00
-            </p>
+    <p className="text-zinc-300 mt-6 max-w-2xl mx-auto text-lg leading-relaxed">
+      Mais de 2500 cursos completos para você aprender,
+      evoluir e começar a ganhar dinheiro online.
+    </p>
 
-            <h1 className="text-lime-400 font-black text-6xl md:text-8xl drop-shadow-[0_0_35px_rgba(132,204,22,0.45)]">
-              R$19,90
-            </h1>
+    <div className="mt-8">
+      <p className="text-zinc-500 line-through text-2xl">
+        De R$ 4.780,00
+      </p>
 
-            <p className="text-zinc-400 mt-2">
-              pagamento único • acesso vitalício
-            </p>
-          </div>
+      <h1 className="text-lime-400 font-black text-6xl md:text-8xl drop-shadow-[0_0_25px_rgba(132,204,22,0.4)]">
+        R$ 19,90
+      </h1>
 
-          {/* BENEFÍCIOS */}
+      <p className="text-zinc-400 mt-2">
+        pagamento único • acesso vitalício
+      </p>
+    </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-12">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-12">
 
-            <div className="bg-[#161b2e] border border-lime-400/20 rounded-2xl py-5 px-4">
-              <p className="text-lime-400 font-bold">
-                ✅ Acesso imediato
-              </p>
-            </div>
+      <div className="bg-black border border-lime-400/20 rounded-2xl py-5 px-4">
+        <p className="text-lime-400 font-bold">
+          ✅ Acesso imediato
+        </p>
+      </div>
 
-            <div className="bg-[#161b2e] border border-lime-400/20 rounded-2xl py-5 px-4">
-              <p className="text-lime-400 font-bold">
-                🔄 Atualizações Frequentes
-              </p>
-            </div>
+      <div className="bg-black border border-lime-400/20 rounded-2xl py-5 px-4">
+        <p className="text-lime-400 font-bold">
+          🔄 Atualizações Frequentes
+        </p>
+      </div>
 
-            <div className="bg-[#161b2e] border border-lime-400/20 rounded-2xl py-5 px-4">
-              <p className="text-lime-400 font-bold">
-                🚀 Cursos Premium
-              </p>
-            </div>
+      <div className="bg-black border border-lime-400/20 rounded-2xl py-5 px-4">
+        <p className="text-lime-400 font-bold">
+          🚀 Cursos Premium
+        </p>
+      </div>
 
-          </div>
+    </div>
 
-          {/* BOTÃO */}
+    <a
+      id="checkout"
+      href="https://pay.cakto.com.br/hj6rqht_900869"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block mt-12"
+    >
 
-          <a
-            id="checkout"
-            href="https://pay.cakto.com.br/hj6rqht_900869"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block mt-14"
-          >
+      <button
+        className="
+        bg-gradient-to-r
+        from-lime-400
+        to-green-500
+        hover:scale-105
+        text-black
+        font-black
+        text-lg
+        md:text-2xl
+        px-10
+        md:px-16
+        py-5
+        rounded-full
+        transition-all
+        duration-300
+        shadow-[0_0_35px_rgba(132,204,22,0.5)]
+        "
+      >
+        🚀 TENHA ACESSO AGORA POR R$ 19,90
+      </button>
 
-            <button
-              className="
-      bg-gradient-to-r
-      from-lime-400
-      to-green-500
-      hover:from-lime-300
-      hover:to-green-400
-      text-black
-      font-black
-      text-lg
-      md:text-2xl
-      px-10
-      md:px-16
-      py-5
-      rounded-full
-      transition-all
-      duration-300
-      hover:scale-110
-      active:scale-95
-      animate-pulse
-      shadow-[0_0_40px_rgba(132,204,22,0.6)]
-    "
-            >
+    </a>
 
-              🚀 QUERO ENTRAR AGORA
+  </div>
 
-            </button>
-
-          </a>
-
-        </div>
-
-      </section>
+</section>
 
       {/* ÁREA PREMIUM */}
 
@@ -770,6 +713,87 @@ export default function App() {
         WhatsApp
 
       </a>
+    {/* DEPOIMENTOS */}
+
+<section className="px-8 py-24">
+
+  <div className="text-center mb-12">
+
+  <p className="text-lime-400 font-bold tracking-[5px] uppercase">
+    ⭐ RESULTADOS REAIS
+  </p>
+
+  <h2 className="text-5xl md:text-7xl font-extrabold text-white mt-4">
+    Mais de 500 Alunos
+  </h2>
+
+  <h2 className="text-5xl md:text-7xl font-extrabold text-lime-400 drop-shadow-[0_0_25px_#84cc16]">
+    Já Entraram Para
+    <br />
+    a FORJA CURSOS
+  </h2>
+
+  <p className="text-zinc-400 mt-6 text-lg max-w-3xl mx-auto">
+    Veja alguns feedbacks de quem já garantiu o acesso e começou a aproveitar os conteúdos da biblioteca.
+  </p>
+
+</div>
+
+<div className="relative max-w-lg mx-auto">
+
+   <div className="bg-zinc-900 border-2 border-lime-400 rounded-[30px] overflow-hidden shadow-[0_0_40px_rgba(132,204,22,0.3)]">
+
+    <img
+  src={prints[printAtual]}
+  alt="Depoimento"
+  className="w-full max-h-[400px] object-contain transition-all duration-500"
+/>
+    </div>
+
+   <button
+  onClick={() =>
+    setPrintAtual(
+      printAtual === 0
+        ? prints.length - 1
+        : printAtual - 1
+    )
+  }
+  className="absolute left-[-20px] top-1/2 -translate-y-1/2 bg-lime-400 text-black w-14 h-14 rounded-full text-2xl font-bold shadow-[0_0_25px_#84cc16]"
+>
+  ←
+</button>
+
+   <button
+  onClick={() =>
+    setPrintAtual(
+      printAtual === prints.length - 1
+        ? 0
+        : printAtual + 1
+    )
+  }
+  className="absolute right-[-20px] top-1/2 -translate-y-1/2 bg-lime-400 text-black w-14 h-14 rounded-full text-2xl font-bold shadow-[0_0_25px_#84cc16]"
+>
+  →
+</button>
+  </div>
+
+  <div className="flex justify-center gap-3 mt-8">
+
+    {prints.map((_, index) => (
+      <button
+        key={index}
+        onClick={() => setPrintAtual(index)}
+        className={`w-3 h-3 rounded-full ${
+          printAtual === index
+            ? "bg-lime-400"
+            : "bg-zinc-700"
+        }`}
+      />
+    ))}
+
+  </div>
+
+</section>
       {/* FAQ */}
 
       <section className="px-6 pb-24">
@@ -820,9 +844,43 @@ export default function App() {
 
       </section>
 
+{/* CTA FINAL */}
+<section className="py-20 px-6 text-center bg-black">
+
+  <div className="max-w-4xl mx-auto">
+
+    <p className="text-red-500 font-bold text-lg md:text-xl animate-pulse">
+      ⚠️ Oferta promocional por tempo limitado
+    </p>
+
+    <h2 className="text-4xl md:text-6xl font-extrabold text-white mt-4">
+      Garanta Seu Acesso Hoje
+    </h2>
+
+    <h3 className="text-5xl md:text-7xl font-extrabold text-lime-400 mt-6 drop-shadow-[0_0_20px_#84cc16]">
+      R$ 19,90
+    </h3>
+
+    <p className="text-zinc-400 mt-6 text-lg">
+      Mais de 2500 cursos, eBooks, ferramentas, IA Premium e acesso vitalício.
+    </p>
+
+    <a
+      href="https://pay.cakto.com.br/hj6rqht_900869"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block mt-10 bg-lime-400 hover:bg-lime-300 text-black font-extrabold text-xl px-12 py-5 rounded-full shadow-[0_0_35px_#84cc16] transition-all duration-300 hover:scale-105"
+    >
+      🚀 QUERO ENTRAR AGORA
+    </a>
+
+  </div>
+
+</section>
+
       {/* FOOTER PREMIUM */}
 
-      <footer className="relative mt-32 bg-gradient-to-b from-zinc-950 via-black to-black border-t border-lime-400/10 overflow-hidden">
+     <footer className="relative mt-0 bg-gradient-to-b ...">
 
         {/* GLOW */}
 
