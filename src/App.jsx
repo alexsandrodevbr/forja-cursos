@@ -538,7 +538,7 @@ export default function App() {
 
     <div className="mt-8">
       <p className="text-zinc-500 line-through text-2xl">
-        De R$ 4.780,00
+        De R$ 477,99
       </p>
 
       <h1 className="text-lime-400 font-black text-6xl md:text-8xl drop-shadow-[0_0_25px_rgba(132,204,22,0.4)]">
@@ -794,6 +794,25 @@ export default function App() {
   </div>
 
 </section>
+
+<section className="py-12 px-4">
+
+  <div className="max-w-4xl mx-auto bg-[#0a0a0a] border border-lime-400/20 rounded-3xl p-8 text-center">
+
+    <h3 className="text-3xl font-bold text-lime-400">
+      🛡️ Garantia de 7 Dias
+    </h3>
+
+    <p className="text-zinc-300 mt-4 text-lg">
+      Você pode acessar todo o conteúdo da FORJA CURSOS sem risco.
+      Se dentro de 7 dias achar que não valeu a pena,
+      basta solicitar o reembolso e receberá 100% do valor pago.
+    </p>
+
+  </div>
+
+</section>
+
       {/* FAQ */}
 
       <section className="px-6 pb-24">
