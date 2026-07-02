@@ -98,8 +98,15 @@ export default function App() {
           Design e muito mais.
 
         </p>
-        <a href="#checkout">
-
+        <a 
+        
+  id="checkout"
+  href="https://pay.cakto.com.br/hj6rqht_900869"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+        
+       
           <button
             className="
       bg-lime-400
@@ -122,7 +129,7 @@ export default function App() {
             QUERO MEU ACESSO POR R$ 19,90
 
           </button>
-
+        
         </a>
       </section>
       {/* VIDEO PRINCIPAL */}
