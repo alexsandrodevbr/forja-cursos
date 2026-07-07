@@ -81,20 +81,46 @@ export default function App() {
 
       <section className="flex flex-col items-center justify-center text-center px-6 py-24">
 
-        <h2 className="text-4xl sm:text-5xl md:text-7xl font-extrabold max-w-5xl leading-tight">
+      {/* URGÊNCIA */}
 
-          TENHA ACESSO
+<div className="mb-8 bg-red-500/10 border border-red-500 rounded-full px-6 py-3 animate-pulse">
 
-          <span className="text-lime-400"> +2500 Cursos </span>
+  <span className="text-red-400 font-bold uppercase tracking-wider">
+    🔥 Vagas promocionais limitadas • Oferta por tempo limitado
+  </span>
 
-          POR APENAS
-          <span className="text-lime-400"> R$ 19,90 </span>
-        </h2>
+</div>
+
+{/* TÍTULO */}
+
+<h2 className="text-4xl sm:text-5xl md:text-7xl font-extrabold max-w-6xl leading-tight">
+
+  TENHA ACESSO A
+
+  <span className="text-lime-400">
+    {" "}+2.500 CURSOS PREMIUM
+  </span>
+
+  <br />
+
+  POR APENAS
+
+  <span className="text-zinc-500 line-through text-2xl md:text-4xl block mt-6">
+    De R$ 477,99
+  </span>
+
+  <span className="text-lime-400 text-6xl md:text-8xl block drop-shadow-[0_0_20px_#84cc16]">
+    R$ 19,90
+  </span>
+
+</h2>
+
+
 
         <p className="text-zinc-400 text-base md:text-xl mt-8 max-w-2xl">
 
           Marketing Digital, Inteligência Artificial,
-          Edição de Vídeos, Programação,
+          Edição de Vídeos, Programação e T.I,
           Design e muito mais.
 
         </p>
@@ -131,10 +157,22 @@ export default function App() {
           </button>
         
         </a>
+        {/* ESCASSEZ */}
+
+<div className="mt-8 bg-red-500/10 border border-red-500 rounded-2xl px-8 py-5 max-w-xl">
+
+  <p className="text-red-400 font-black text-xl animate-pulse">
+    ⚠️ RESTAM APENAS 25 VAGAS PROMOCIONAIS
+  </p>
+
+  <p className="text-zinc-300 mt-2">
+    Garanta seu acesso antes que o valor promocional seja encerrado.
+  </p>
+
+</div>
       </section>
       {/* VIDEO PRINCIPAL */}
-
-      <div className="mt-20 w-full flex flex-col items-center px-4">
+<div className="mt-4 w-full flex flex-col items-center px-4">
 
         <div className="relative w-full max-w-4xl rounded-[28px] overflow-hidden border border-lime-400/30 bg-zinc-900 shadow-[0_0_50px_rgba(132,204,22,0.12)]">
 
@@ -417,109 +455,160 @@ export default function App() {
 
       {/* ÁREA DOS CURSOS */}
 
-      <section className="px-8 pb-20">
+      {/* AMOSTRA DOS CURSOS */}
 
-        <h3 className="text-4xl font-extrabold mb-10 text-lime-400">
+<section className="px-6 md:px-10 py-20">
 
-          Uma Pequena Amostra do Que Você Vai Receber
+  <div className="text-center mb-14">
 
+    <span className="text-lime-400 font-bold tracking-[4px] uppercase">
+      O QUE VOCÊ ENCONTRA
+    </span>
+
+    <h2 className="text-4xl md:text-6xl font-black mt-4">
+      Uma pequena amostra da
+      <span className="text-lime-400"> Biblioteca FORJA</span>
+    </h2>
+
+    <p className="text-zinc-400 mt-5 text-lg max-w-3xl mx-auto">
+      São mais de <strong className="text-white">2.500 cursos</strong>,
+      materiais exclusivos e conteúdos atualizados para acelerar seus resultados.
+    </p>
+
+  </div>
+
+
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+    {/* CARD 1 */}
+
+    <div className="group rounded-3xl overflow-hidden bg-zinc-900 border border-zinc-800 hover:border-lime-400 transition duration-500 hover:-translate-y-2 hover:shadow-[0_0_35px_rgba(132,204,22,.35)]">
+
+      <div className="relative h-60 overflow-hidden">
+
+        <img
+          src="https://images.unsplash.com/photo-1460925895917-afdab827c52f"
+          alt="Marketing"
+          className="w-full h-full object-cover object-center group-hover:scale-110 transition duration-700"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent"></div>
+
+      </div>
+
+      <div className="p-6">
+
+        <h3 className="text-2xl font-bold text-white">
+          Marketing Digital
         </h3>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <p className="text-zinc-400 mt-3">
+          Tráfego pago, Instagram, Facebook Ads, funis e estratégias de vendas.
+        </p>
 
-          {/* CARD */}
+      </div>
 
-          <div className="bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 backdrop-blur-md bg-black/60 sticky top-0 z-50 hover:border-lime-400 hover:scale-[1.03] hover:-translate-y-2 transition duration-300 shadow-[0_0_20px_rgba(132,204,22,0.2)]">
-
-            <img
-              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f"
-              className="w-full h-52 object-cover"
-            />
-
-            <div className="p-6">
-
-              <h4 className="text-2xl font-bold mb-4">
-
-                Marketing Digital
-
-              </h4>
-
-
-            </div>
-
-          </div>
-
-          {/* CARD */}
-
-          <div className="bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 hover:border-lime-400 hover:scale-[1.03] hover:-translate-y-2 transition duration-300 shadow-[0_0_20px_rgba(132,204,22,0.2)]">
-
-            <img
-              src="https://images.unsplash.com/photo-1677442136019-21780ecad995"
-              className="w-full h-52 object-cover"
-            />
-
-            <div className="p-6">
-
-              <h4 className="text-2xl font-bold mb-4">
-
-                Inteligência Artificial
-
-              </h4>
+    </div>
 
 
 
-            </div>
+    {/* CARD 2 */}
 
-          </div>
+    <div className="group rounded-3xl overflow-hidden bg-zinc-900 border border-zinc-800 hover:border-lime-400 transition duration-500 hover:-translate-y-2 hover:shadow-[0_0_35px_rgba(132,204,22,.35)]">
 
-          {/* CARD */}
+      <div className="relative h-60 overflow-hidden">
 
-          <div className="bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 hover:border-lime-400 hover:scale-[1.03] hover:-translate-y-2 transition duration-300 shadow-[0_0_20px_rgba(132,204,22,0.2)]">
+        <img
+          src="https://images.unsplash.com/photo-1677442136019-21780ecad995"
+          alt="IA"
+          className="w-full h-full object-cover object-center group-hover:scale-110 transition duration-700"
+        />
 
-            <img
-              src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?q=80&w=1200&auto=format&fit=crop"
-            />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent"></div>
 
-            <div className="p-6">
+      </div>
 
-              <h4 className="text-2xl font-bold mb-4">
+      <div className="p-6">
 
-                Edição de Vídeo
+        <h3 className="text-2xl font-bold text-white">
+          Inteligência Artificial
+        </h3>
 
-              </h4>
+        <p className="text-zinc-400 mt-3">
+          ChatGPT, automações, prompts, produtividade e criação de conteúdo.
+        </p>
 
+      </div>
 
-
-            </div>
-
-          </div>
-
-          {/* CARD */}
-
-          <div className="bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 hover:border-lime-400 hover:scale-[1.03] hover:-translate-y-2 transition duration-300 shadow-[0_0_20px_rgba(132,204,22,0.2)]">
-
-            <img
-              src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4"
-              className="w-full h-52 object-cover"
-            />
-
-            <div className="p-6">
-
-              <h4 className="text-2xl font-bold mb-4">
-
-                Programação
-
-              </h4>
+    </div>
 
 
 
-            </div>
+    {/* CARD 3 */}
 
-          </div>
+    <div className="group rounded-3xl overflow-hidden bg-zinc-900 border border-zinc-800 hover:border-lime-400 transition duration-500 hover:-translate-y-2 hover:shadow-[0_0_35px_rgba(132,204,22,.35)]">
 
-        </div>
+      <div className="relative h-60 overflow-hidden">
 
-      </section>
+        <img
+          src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?q=80&w=1200&auto=format&fit=crop"
+          alt="Vídeo"
+          className="w-full h-full object-cover object-center group-hover:scale-110 transition duration-700"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent"></div>
+
+      </div>
+
+      <div className="p-6">
+
+        <h3 className="text-2xl font-bold text-white">
+          Edição de Vídeo
+        </h3>
+
+        <p className="text-zinc-400 mt-3">
+          Premiere, CapCut, After Effects, DaVinci Resolve e muito mais.
+        </p>
+
+      </div>
+
+    </div>
+
+
+
+    {/* CARD 4 */}
+
+    <div className="group rounded-3xl overflow-hidden bg-zinc-900 border border-zinc-800 hover:border-lime-400 transition duration-500 hover:-translate-y-2 hover:shadow-[0_0_35px_rgba(132,204,22,.35)]">
+
+      <div className="relative h-60 overflow-hidden">
+
+        <img
+          src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4"
+          alt="Programação"
+          className="w-full h-full object-cover object-center group-hover:scale-110 transition duration-700"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent"></div>
+
+      </div>
+
+      <div className="p-6">
+
+        <h3 className="text-2xl font-bold text-white">
+          Programação
+        </h3>
+
+        <p className="text-zinc-400 mt-3">
+          HTML, CSS, JavaScript, React, Python, Node.js e desenvolvimento completo.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
      {/* OFERTA FINAL PREMIUM */}
 
